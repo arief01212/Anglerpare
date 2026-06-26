@@ -1,0 +1,31 @@
+name: fishing_solunar
+description: "Fishing Solunar - menentukan waktu makan ikan (solunar) di spot lokasi pengguna, offline."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Peta interaktif gratis berbasis OpenStreetMap (tanpa API key)
+  flutter_map: ^6.1.0
+  latlong2: ^0.9.1
+
+  # GPS / lokasi perangkat
+  geolocator: ^11.0.0
+
+  # Catatan: perhitungan astronomi (matahari & bulan) di-port langsung
+  # ke dalam lib/services/sun_calc.dart agar 100% offline dan tidak
+  # bergantung pada perubahan API paket eksternal. Lihat README.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
